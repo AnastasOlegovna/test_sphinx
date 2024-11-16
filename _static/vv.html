@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Maker</title>
+</head>
+<body>
+    <!-- Your HTML content here -->
+
+    <button onclick="makeCoffee('espresso')">Espresso</button>
+    <button onclick="makeCoffee('cappuccino')">Cappuccino</button>
+    <button onclick="makeCoffee('latte')">Latte</button>
+
+    <script>
+        /**
+         * Prepares and dispenses coffee based on the specified type.
+         *
+         * @param {string} type - The type of coffee (e.g., "espresso," "cappuccino," etc.)
+         * @returns {void} - No return value
+         */
+        function makeCoffee(type) {
+            // Add your coffee-making logic here
+            alert(`Preparing ${type}... Enjoy!`);
+        }
+    </script>
+</body>
+</html>
+
