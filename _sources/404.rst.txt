@@ -4,10 +4,6 @@
 
 .. image:: houston.png
 
-.. image:: sorry.png
-   :align: right
-   :scale: 40%
-
 Houston, we have a problem! It seems the rocket ship to this page has encountered a detour. Don't worry, we're working on getting it back on course.
 
 Please check the URL or navigate back to the homepage :doc:`index`

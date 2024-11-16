@@ -3,13 +3,15 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Payment bot!
+Welcome to Coffee page!
 ===============================
 
 .. container:: image-right
 
    .. image:: settin.png
       :alt: pay
+      :scale: 40%
+
 
 :Author: Pani Anastasia
 
@@ -19,15 +21,9 @@ Welcome to Payment bot!
 
 .. Last Updated on |today|
 
-:Revision: 03
+:Revision: 01
 
-.. attention::
-
-   Be careful
-
-Check out the :doc:`Install` section for further information
-
-This module for test.  Use documentation `Telegram Payments <https://core.telegram.org/bots/api#payments>`_ and offers handling payment in Telegram
+This module for test
 
 .. note::
 
@@ -46,7 +42,6 @@ Contents
 .. toctree::
    :maxdepth: 2
 
-   install
    coffee_test
 
 
