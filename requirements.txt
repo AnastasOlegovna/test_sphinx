@@ -1,0 +1,16 @@
+furo
+Flask
+ecdsa
+python-dotenv
+Sphinx==7.4.7
+sphinx-copybutton
+sphinxcontrib-googleanalytics
+sphinx-togglebutton
+sphinx-rtd-theme
+sphinxcontrib-jquery
+babel
+
+
+
+
+

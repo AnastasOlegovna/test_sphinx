@@ -1,0 +1,45 @@
+<!-- source/_templates/layout.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ title }}</title>
+    <!-- Include extra head content here -->
+    <script>
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'G-9V8RFYNYB7']);
+        _gaq.push(['_trackPageview']);
+    </script>
+    {{ extrahead }}
+    <link rel="stylesheet" href="{{ pathto('custom.css', 1) }}" type="text/css"/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- Your header content -->
+        </header>
+        <div class="content">
+            {{ body }}
+        </div>
+        <footer>
+            {{ super() }}
+            <div class="footer">This page uses <a href="https://analytics.google.com/">
+                Google Analytics</a> to collect statistics. You can disable it by blocking
+                the JavaScript coming from www.google-analytics.com.
+                <script>
+                    (function() {
+                        var ga = document.createElement('script');
+                        ga.src = ('https:' == document.location.protocol ?
+                                  'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+                        ga.setAttribute('async', 'true');
+                        document.documentElement.firstChild.appendChild(ga);
+                    })();
+                </script>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
+

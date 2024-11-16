@@ -1,0 +1,43 @@
+/* @import 'agogo.css';
+Your own custom CSS code
+
+dt:target, .highlighted {
+    background-image: linear-gradient(to right, #245995, #e6eff9);
+}
+div.image-right {
+    float: right;
+    margin-top: -60px;
+    margin-left: 20px;
+    clear: both; /* Helps to prevent content from wrapping around floated image
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+table, th, td {
+  border: 1px solid black;
+}
+td:nth-child(2) {  /* This targets the second column
+  width: 10%;  /* Adjust this value to set the column width
+}
+table {
+  margin-bottom: 20px;  /* Adjust this value to set the amount of space
+}
+*/
+body {
+  background-color: #F6F6F6;
+  font-size: 0.75rem;
+  font: inherit;
+}
+.wy-side-nav-search {
+  background-color: #ef4444;
+}
+.collapse-code {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.collapse-code summary {
+    cursor: pointer;
+}

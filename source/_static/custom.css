@@ -1,0 +1,11 @@
+/* This file intentionally left blank. */
+@import 'theme.css';
+body {
+  background-color: #F6F6F6;
+  font-size: 0.75rem;
+  font: inherit;
+}
+.wy-side-nav-search {
+  background-color: #ef4444;
+}
+

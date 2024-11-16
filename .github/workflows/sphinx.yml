@@ -1,0 +1,54 @@
+name: "Sphinx: Render docs"
+
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - uses: actions/checkout@v4
+
+    # Install Python dependencies and enforce Sphinx version 7.4.7
+    - name: Install Python dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install --force-reinstall -r requirements.txt
+
+    # Install Node.js and npm
+    - name: Install Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'  # Ensure you have a specific node version
+
+    # Install jsdoc globally
+    - name: Install jsdoc
+      run: |
+        npm install -g jsdoc
+        pip install sphinx-js
+
+    # Force reinstall of Sphinx version 7.4.7 inside Docker container (if needed)
+    - name: Reinstall Sphinx to 7.4.7
+      run: |
+        pip install --force-reinstall Sphinx==7.4.7
+
+    # Build the Sphinx documentation
+    - name: Build HTML
+      run: make html  # Ensure the correct make command is run
+      working-directory: docs
+
+    # Upload artifacts
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: html-docs
+        path: docs/build/html/
+
+    # Deploy to GitHub Pages if on the 'main' branch
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: docs/build/html
