@@ -14,10 +14,10 @@ import os
 
 sys.path.insert(0, pathlib.Path(__file__).parents[2].resolve().as_posix())
 
-project = 'Mono_test_webhook'
+project = 'Coffee'
 copyright = '2024, Ponomarova'
 author = 'Ponomarova'
-release = '0.6'
+release = '0.1'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -81,7 +81,7 @@ exclude_patterns = ['404.html']  # Щоб видалити посилання н
 
 notfound_template = '404.html'
 
-html_title = "Mono_test_webhook's"
+html_title = "Do you like coffee?"
 html_last_updated_fmt = '%d %b %Y'
 html_show_sourcelink = False
 
